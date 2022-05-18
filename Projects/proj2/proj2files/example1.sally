@@ -1,0 +1,18 @@
+// File: example1.sally
+//
+// CMSC 341 Fall 2018 Project 2
+//
+// Sally FORTH source code
+//
+// Basic test
+//
+
+."In FORTH, speak like Yoda we do"     // string literals between ." and "
+.                                      // . prints top of the stack
+CR                                     // prints carriage return
+."Three plus five, what is?"
+.
+SP                            // prints a space character
+3 5 +                         // computes the sum
+.                             // prints the top of the stack again
+CR

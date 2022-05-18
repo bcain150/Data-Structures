@@ -1,0 +1,264 @@
+Script started on 2018-09-11 17:09:25-04:00
+[bcain1@linux3 proj0]g++ -gstabs+ -I ../../00Proj0 ../../00Proj0/chaos.cpp proj0.cpp -o proj0.out
+[bcain1@linux3 proj0]./proj0.out 
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+Abort (core dumped)
+[bcain1@linux3 proj0]gdb p
+proj0.cpp  proj0.out* 
+[bcain1@linux3 proj0]gdb proj0.out
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from proj0.out...done.
+(gdb) run
+Starting program: /afs/umbc.edu/users/p/a/park/pub/cs341/bcain1/proj0/proj0.out 
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-30.fc28.x86_64
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+
+Program received signal SIGABRT, Aborted.
+0x00007ffff710ffeb in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: dnf debuginfo-install libgcc-8.1.1-5.fc28.x86_64 libstdc++-8.1.1-5.fc28.x86_64
+(gdb) where
+#0  0x00007ffff710ffeb in raise () from /lib64/libc.so.6
+#1  0x00007ffff70fa5c1 in abort () from /lib64/libc.so.6
+#2  0x00007ffff7ad0a9b in __gnu_cxx::__verbose_terminate_handler() [clone .cold.1] () from /lib64/libstdc++.so.6
+#3  0x00007ffff7ad6efc in __cxxabiv1::__terminate(void (*)()) () from /lib64/libstdc++.so.6
+#4  0x00007ffff7ad6f57 in std::terminate() () from /lib64/libstdc++.so.6
+#5  0x00007ffff7ad71b8 in __cxa_throw () from /lib64/libstdc++.so.6
+#6  0x00007ffff7ad5ed8 in __cxa_throw_bad_array_new_length () from /lib64/libstdc++.so.6
+#7  0x000000000040083c in main () at proj0.cpp:22
+(gdb) break 22
+Breakpoint 1 at 0x400804: file proj0.cpp, line 22.
+(gdb) ki[K[Kkill
+Kill the program being debugged? (y or n) n
+Not confirmed.
+(gdb) run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /afs/umbc.edu/users/p/a/park/pub/cs341/bcain1/proj0/proj0.out 
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+(gdb) disp size
+1: size = 1
+(gdb) disp i
+2: i = 1
+(gdb) continue[K[K[K[K
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 2
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 3
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 4
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 5
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 6
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 7
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 8
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 9
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 10
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 11
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 12
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 13
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 14
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 15
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 16
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 17
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 18
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 19
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 20
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 21
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 22
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 23
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 1
+2: i = 24
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 2
+2: i = 25
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 2
+2: i = 26
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = 0
+2: i = 27
+(gdb) 
+Continuing.
+
+Breakpoint 1, main () at proj0.cpp:22
+22	      ptr = new int[size];  // allocate array
+1: size = -1
+2: i = 28
+(gdb) 
+Continuing.
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+
+Program received signal SIGABRT, Aborted.
+0x00007ffff710ffeb in raise () from /lib64/libc.so.6
+(gdb) exit[K[K[K[Keuit[K[K[K[Kquit
+A debugging session is active.
+
+	Inferior 1 [process 2018] will be killed.
+
+Quit anyway? (y or n) y
+[bcain1@linux3 proj0]exit
+exit
+
+Script done on 2018-09-11 17:12:57-04:00

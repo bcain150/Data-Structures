@@ -1,0 +1,77 @@
+linux2% g++ InnerCB.cpp CBofCB.cpp p1test11.cpp -o t11.out
+linux2% time ./t11.out
+
+-------------------
+Add 1270 items
+Total size = 1270
+m_buffers[0]->size() = 10
+m_buffers[1]->size() = 20
+m_buffers[2]->size() = 40
+m_buffers[3]->size() = 80
+m_buffers[4]->size() = 160
+m_buffers[5]->size() = 320
+m_buffers[6]->size() = 640
+
+-------------------
+Remove 630 items
+Total size = 640
+m_buffers[6]->size() = 640
+
+-------------------
+Add 80640 items
+Total size = 81280
+m_buffers[6]->size() = 640
+m_buffers[0]->size() = 1280
+m_buffers[1]->size() = 2560
+m_buffers[2]->size() = 5120
+m_buffers[3]->size() = 10240
+m_buffers[4]->size() = 20480
+m_buffers[5]->size() = 40960
+
+Correct, CBofCB B is completely full.
+
+
+-------------------
+Remove 40320 items
+Total size = 40960
+m_buffers[5]->size() = 40960
+
+-------------------
+Add 5160960 items
+Total size = 5201920
+m_buffers[5]->size() = 40960
+m_buffers[6]->size() = 81920
+m_buffers[0]->size() = 163840
+m_buffers[1]->size() = 327680
+m_buffers[2]->size() = 655360
+m_buffers[3]->size() = 1310720
+m_buffers[4]->size() = 2621440
+
+-------------------
+Remove 2580480 items
+Total size = 2621440
+m_buffers[4]->size() = 2621440
+
+-------------------
+Add 330301440 items
+Total size = 332922880
+m_buffers[4]->size() = 2621440
+m_buffers[5]->size() = 5242880
+m_buffers[6]->size() = 10485760
+m_buffers[0]->size() = 20971520
+m_buffers[1]->size() = 41943040
+m_buffers[2]->size() = 83886080
+m_buffers[3]->size() = 167772160
+
+-------------------
+Remove 332922880 items
+Total size = 0
+m_buffers[3]->size() = 0
+
+Correct, CBofCB B has no items.
+
+
+-------------------
+Total of 335,544,310 items added and removed
+17.766u 0.184s 0:17.97 99.8%    0+0k 0+0io 0pf+0w
+linux2% 

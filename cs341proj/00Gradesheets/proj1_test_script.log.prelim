@@ -1,0 +1,192 @@
+Grading Test Log for bcain1:
+
+
+===============================================================================
+>>> Category 0: Misc.
+===============================================================================
+===============================================================================
+| [M.1] [M.2] [M.3] [M.4] Symbolic link test
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 0 pts: [M.1] InnerCB.cpp was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.2] CBofCB.cpp was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.3] typescript was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.4] timing.txt was not a symbolic link (-5 penalty)
+
+
+===============================================================================
+>>> Category 1: Submission, Compilation
+===============================================================================
+===============================================================================
+| [1.1] typescript submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 3 pts: [1.1] typescript submitted--PASSED
+
+===============================================================================
+| [1.2] timing.txt submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 3 pts: [1.2] timing.txt submitted--PASSED
+
+Preparatory "make" results:
+g++    -c -o InnerCB.o InnerCB.cpp
+g++    -c -o CBofCB.o CBofCB.cpp
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest01.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+-o p1grtest01.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest02.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+-o p1grtest02.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest03.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+-o p1grtest03.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest04.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+-o p1grtest04.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest05.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+-o p1grtest05.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest06.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+CBofCB.cpp ../../../p1scripts/TEST_FILES/CBofCB_dump.cpp \
+-o p1grtest06.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest07.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+CBofCB.cpp ../../../p1scripts/TEST_FILES/CBofCB_dump.cpp \
+-o p1grtest07.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest08.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+CBofCB.cpp ../../../p1scripts/TEST_FILES/CBofCB_dump.cpp \
+-o p1grtest08.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest09.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+CBofCB.cpp ../../../p1scripts/TEST_FILES/CBofCB_dump.cpp \
+-o p1grtest09.out
+g++ -I . ../../../p1scripts/TEST_FILES/p1grtest10.cpp \
+InnerCB.cpp ../../../p1scripts/TEST_FILES/InnerCB_dump.cpp \
+CBofCB.cpp ../../../p1scripts/TEST_FILES/CBofCB_dump.cpp \
+-o p1grtest10.out
+===============================================================================
+| [2.1] InnerCB.cpp submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 2 pts: [2.1] InnerCB.cpp submitted--PASSED
+
+===============================================================================
+| [2.2] InnerCB.cpp compiles
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 2 pts: [2.2] InnerCB.cpp compiles--PASSED
+
+===============================================================================
+| [3.1] CBofCB.cpp submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 2 pts: [3.1] CBofCB.cpp submitted--PASSED
+
+===============================================================================
+| [3.2] CBofCB.cpp compiles
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 3 pts: [3.2] CBofCB.cpp compiles--PASSED
+
+===============================================================================
+| [4.01] p1grtest01 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 2 pts: [4.1] p1grtest01 compiles and executes correctly
+===============================================================================
+| [4.02] p1grtest02 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 2 pts: [4.2] p1grtest02 compiles and executes correctly
+===============================================================================
+| [4.03] p1grtest03 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 4 pts: [4.3] p1grtest03 compiles and executes correctly
+===============================================================================
+| [4.04] p1grtest04 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 4 pts: [4.4] p1grtest04 compiles and executes correctly
+===============================================================================
+| [4.05] p1grtest05 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 5 pts: [4.5] p1grtest05 compiles and executes correctly
+===============================================================================
+| [4.06] p1grtest06 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 2 pts: [4.6] p1grtest06 compiles and executes correctly
+===============================================================================
+| [4.07] p1grtest07 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 2 pts: [4.7] p1grtest07 compiles and executes correctly
+===============================================================================
+| [4.08] p1grtest08 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 4 pts: [4.8] p1grtest08 compiles and executes correctly
+===============================================================================
+| [4.09] p1grtest09 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 5 pts: [4.9] p1grtest09 compiles and executes correctly
+===============================================================================
+| [4.10] p1grtest10 compiles and executes correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 5 pts: [4.10] p1grtest10 compiles and executes correctly
+
+
+===============================================================================
+>>> Category 3: Running Times
+===============================================================================
+
+@@@@ GRADE_ENTRY 10 pts: [5.1] timing.txt shows increasingly doubled runtimes
+
+
+===============================================================================
+>>> Category 4: Design
+===============================================================================
+
+@@@@ GRADE_ENTRY 15 pts: [D.1] Good design of InnerCB class
+
+@@@@ GRADE_ENTRY 15 pts: [D.2] Good design of CBofCB class
+
+
+===============================================================================
+>>> Category 5: Coding Standards
+===============================================================================
+
+@@@@ GRADE_ENTRY 2 pts: [S.1] Proper and consistent indentation
+
+@@@@ GRADE_ENTRY 3 pts: [S.2] No global variables or static data members
+
+@@@@ GRADE_ENTRY 3 pts: [S.3] Sufficient and meaningful commenting
+
+@@@@ GRADE_ENTRY 2 pts: [S.4] Meaningful variable names
+
+
+===============================================================================
+>>> ADDITIONAL GRADER COMMENTS
+===============================================================================
+<Automatic grading results--may be adjusted>

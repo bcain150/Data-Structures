@@ -1,0 +1,27 @@
+result should be 11: 11
+result should be 12: 12
+result should be 13: 13
+result should be 14: 14
+result should be 15: 15
+result should be 16: 16
+result should be 17: 17
+result should be 18: 18
+result should be 19: 19
+result should be 20: 20
+result should be 21: 21
+result should be 22: 22
+result should be 23: 23
+result should be 24: 24
+result should be 25: 25
+result should be 26: 26
+result should be 27: 27
+-----------------------------------------
+Outer Circular buffer dump(), m_obSize = 1:
+[1] InnerCB dump(): m_size = 11
+[4] 28, [5] 29, [6] 30, [7] 31, [8] 32, [9] 33, [10] 34, [11] 35, [12] 36, [13] 37, [14] 38, 
+-----------------------------------------
+-----------------------------------------
+Outer Circular buffer dump(), m_obSize = 1:
+[1] InnerCB dump(): m_size = 11
+[11] 55, [12] 56, [13] 57, [14] 58, [15] 59, [16] 60, [17] 61, [18] 62, [19] 63, [0] 64, [1] 65, 
+-----------------------------------------

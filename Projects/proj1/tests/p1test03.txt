@@ -1,0 +1,6 @@
+Capacity = 7
+Size = 7
+Correct, InnerCB B should be full.
+Capacity = 7
+Size = 0
+Correct, InnerCB B should be empty.

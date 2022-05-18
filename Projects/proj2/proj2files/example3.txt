@@ -1,0 +1,6 @@
+15 15
+17
+20 30
+1 2 3
+End of Program
+Parameter stack empty.

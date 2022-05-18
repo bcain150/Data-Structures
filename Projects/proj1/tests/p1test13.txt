@@ -1,0 +1,189 @@
+linux2% g++ InnerCB.cpp CBofCB.cpp p1test13.cpp -o t13.out
+linux2% ./t13.out
+
+-------------------
+Add 1270 items
+Total size = 1270
+m_buffers[0]->size() = 10
+m_buffers[1]->size() = 20
+m_buffers[2]->size() = 40
+m_buffers[3]->size() = 80
+m_buffers[4]->size() = 160
+m_buffers[5]->size() = 320
+m_buffers[6]->size() = 640
+
+-------------------
+Remove 630 items
+Total size = 640
+m_buffers[6]->size() = 640
+
+-------------------
+Add 80640 items
+Total size = 81280
+m_buffers[6]->size() = 640
+m_buffers[0]->size() = 1280
+m_buffers[1]->size() = 2560
+m_buffers[2]->size() = 5120
+m_buffers[3]->size() = 10240
+m_buffers[4]->size() = 20480
+m_buffers[5]->size() = 40960
+
+-------------------
+Remove 40320 items
+Total size = 40960
+m_buffers[5]->size() = 40960
+
+-------------------
+Add 5160960 items
+Total size = 5201920
+m_buffers[5]->size() = 40960
+m_buffers[6]->size() = 81920
+m_buffers[0]->size() = 163840
+m_buffers[1]->size() = 327680
+m_buffers[2]->size() = 655360
+m_buffers[3]->size() = 1310720
+m_buffers[4]->size() = 2621440
+
+-------------------
+Remove 2580480 items
+Total size = 2621440
+m_buffers[4]->size() = 2621440
+
+-------------------
+Add 330301440 items
+Total size = 332922880
+m_buffers[4]->size() = 2621440
+m_buffers[5]->size() = 5242880
+m_buffers[6]->size() = 10485760
+m_buffers[0]->size() = 20971520
+m_buffers[1]->size() = 41943040
+m_buffers[2]->size() = 83886080
+m_buffers[3]->size() = 167772160
+
+-------------------
+Remove 165150720 items
+Total size = 167772160
+m_buffers[3]->size() = 167772160
+
+-------------------
+Add 335,544,310 items
+Total size = 503316470
+m_buffers[3]->size() = 167772160
+m_buffers[4]->size() = 335544310
+
+-------------------
+Add 335,544,310 items
+Total size = 838860780
+m_buffers[3]->size() = 167772160
+m_buffers[4]->size() = 335544320
+m_buffers[5]->size() = 335544300
+
+-------------------
+Add 335,544,310 items
+Total size = 1174405090
+m_buffers[3]->size() = 167772160
+m_buffers[4]->size() = 335544320
+m_buffers[5]->size() = 671088610
+
+-------------------
+Remove 1174405090 items
+Total size = 0
+m_buffers[5]->size() = 0
+
+-------------------
+Total of 4 * 335,544,310 items added and removed
+linux2% time ./t13.out
+
+-------------------
+Add 1270 items
+Total size = 1270
+m_buffers[0]->size() = 10
+m_buffers[1]->size() = 20
+m_buffers[2]->size() = 40
+m_buffers[3]->size() = 80
+m_buffers[4]->size() = 160
+m_buffers[5]->size() = 320
+m_buffers[6]->size() = 640
+
+-------------------
+Remove 630 items
+Total size = 640
+m_buffers[6]->size() = 640
+
+-------------------
+Add 80640 items
+Total size = 81280
+m_buffers[6]->size() = 640
+m_buffers[0]->size() = 1280
+m_buffers[1]->size() = 2560
+m_buffers[2]->size() = 5120
+m_buffers[3]->size() = 10240
+m_buffers[4]->size() = 20480
+m_buffers[5]->size() = 40960
+
+-------------------
+Remove 40320 items
+Total size = 40960
+m_buffers[5]->size() = 40960
+
+-------------------
+Add 5160960 items
+Total size = 5201920
+m_buffers[5]->size() = 40960
+m_buffers[6]->size() = 81920
+m_buffers[0]->size() = 163840
+m_buffers[1]->size() = 327680
+m_buffers[2]->size() = 655360
+m_buffers[3]->size() = 1310720
+m_buffers[4]->size() = 2621440
+
+-------------------
+Remove 2580480 items
+Total size = 2621440
+m_buffers[4]->size() = 2621440
+
+-------------------
+Add 330301440 items
+Total size = 332922880
+m_buffers[4]->size() = 2621440
+m_buffers[5]->size() = 5242880
+m_buffers[6]->size() = 10485760
+m_buffers[0]->size() = 20971520
+m_buffers[1]->size() = 41943040
+m_buffers[2]->size() = 83886080
+m_buffers[3]->size() = 167772160
+
+-------------------
+Remove 165150720 items
+Total size = 167772160
+m_buffers[3]->size() = 167772160
+
+-------------------
+Add 335,544,310 items
+Total size = 503316470
+m_buffers[3]->size() = 167772160
+m_buffers[4]->size() = 335544310
+
+-------------------
+Add 335,544,310 items
+Total size = 838860780
+m_buffers[3]->size() = 167772160
+m_buffers[4]->size() = 335544320
+m_buffers[5]->size() = 335544300
+
+-------------------
+Add 335,544,310 items
+Total size = 1174405090
+m_buffers[3]->size() = 167772160
+m_buffers[4]->size() = 335544320
+m_buffers[5]->size() = 671088610
+
+-------------------
+Remove 1174405090 items
+Total size = 0
+m_buffers[5]->size() = 0
+
+-------------------
+Total of 4 * 335,544,310 items added and removed
+62.236u 0.738s 1:03.04 99.8%    0+0k 0+0io 0pf+0w
+linux2% 

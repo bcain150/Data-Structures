@@ -1,0 +1,62 @@
+CMSC341 Project 1 Gradesheet
+---------------------------------------------------------------------------
+Student ID: bcain1
+
+Category 0: Misc:
+      Symbolic links (not allowed)
+	 0 pts: [M.1] InnerCB.cpp was not a symbolic link (-5 penalty)
+	 0 pts: [M.2] CBofCB.cpp was not a symbolic link (-5 penalty)
+	 0 pts: [M.3] typescript was not a symbolic link (-5 penalty)
+	 0 pts: [M.4] timing.txt was not a symbolic link (-5 penalty)
+
+Category 1: Submission, Compilation: (15 pts)
+      typescript:
+	 3 pts: [1.1] typescript submitted
+	 3 pts: [1.2] timing.txt submitted
+
+      InnerCB:
+	 2 pts: [2.1] InnerCB.cpp submitted
+	 2 pts: [2.2] InnerCB.cpp compiles
+
+      CBofCB:
+	 2 pts: [3.1] CBofCB.cpp submitted
+	 3 pts: [3.2] CBofCB.cpp compiles
+
+Category 2: Test Program Execution (35 pts)
+	 2 pts: [4.1] p1grtest01 compiles and executes correctly
+	 2 pts: [4.2] p1grtest02 compiles and executes correctly
+	 4 pts: [4.3] p1grtest03 compiles and executes correctly
+	 4 pts: [4.4] p1grtest04 compiles and executes correctly
+	 5 pts: [4.5] p1grtest05 compiles and executes correctly
+	 2 pts: [4.6] p1grtest06 compiles and executes correctly
+	 2 pts: [4.7] p1grtest07 compiles and executes correctly
+	 4 pts: [4.8] p1grtest08 compiles and executes correctly
+	 5 pts: [4.9] p1grtest09 compiles and executes correctly
+	 5 pts: [4.10] p1grtest10 compiles and executes correctly
+
+Category 3: Running Times (10 pts)
+	10 pts: [5.1] timing.txt shows increasingly doubled runtimes
+
+Category 4: Design (30 pts)
+	15 pts: [D.1] Good design of InnerCB class
+	15 pts: [D.2] Good design of CBofCB class
+
+Category 5: Coding Standards (10 pts)
+	 2 pts: [S.1] Proper and consistent indentation
+	 3 pts: [S.2] No global variables or static data members
+	 3 pts: [S.3] Sufficient and meaningful commenting
+	 2 pts: [S.4] Meaningful variable names
+
+
+Deductions:     
+
+Max grade: 100
+Raw grade: 100
+Late penalty: 0
+Misc penalty:
+Total grade: 100
+
+General Comments:
+=================
+<Automatic grading results--may be adjusted>
+----

@@ -1,0 +1,29 @@
+// File: example6.sally
+//
+// CMSC 341 Fall 2018 Project 2
+//
+// Sally FORTH source code
+//
+// Testing logical connectors
+//
+
+
+12 x SET
+
+."Truth table for AND" . CR
+x @ 13 >=  x @ 11 <=   AND . CR
+x @ 13 >=  x @ 20 <=   AND . CR
+x @ 11 >=  x @  9 <=   AND . CR
+x @ 10 >=  x @ 20 <=   AND . CR
+CR
+
+."Truth table for OR" . CR
+x @ 13 >=  x @ 11 <=   OR . CR
+x @ 13 >=  x @ 20 <=   OR . CR
+x @ 11 >=  x @  9 <=   OR . CR
+x @ 10 >=  x @ 20 <=   OR . CR
+CR
+
+."Truth table for NOT" . CR
+x @ 15 >= NOT . CR
+x @  5 >= NOT . CR

@@ -1,0 +1,52 @@
+HW3
+
+Question 1:
+
+    4, 7, 2, 5, 9, 1, 3, 6, 8
+
+Question 2:
+
+    Fragment A: O(log(n) + c)
+        the while loop will cut the value t in half after each run of the loop which is the inverse of doubling it each time.
+        Since doubling each time would be an exponetial function then the upper bound must be the inverse of an exponetial function which is log n.
+        The plus a constant 'c' is for when t is assigned to n in the beginning which will always take some constant time c.
+
+    Fragment B: O(n*log(n) + c)
+        there is the same while loop as the fragment before which has an upper bound of log n runtime. However, this while loop executes multipletimes over
+        which is also determined by n. Therefore the upperbound must be an n multiple of the while loops runtime or N-Log-N. The plus a constant 'c' is for
+        the assignment of int something to 0 which will always have a constant runtime of some c.
+    
+    Fragment C: O(log(n^2) + c)
+        the while loop from the first and second problem still exists and still has an upper bound of O(log n) except this time there is more computation
+        being added inside the while loop. This for loop executes a t number of times which is directly related to n therefore it executes n times.
+        this linear relationship to n has O(n) runtime. However, it executes within a while loop that (without the for loop) has O(log n). There by multiplying
+        the runtime of each pass of the while loop by n times. That means the upper bound of an execution of this code would be O(log(n*n)) or O(log(n^2)).
+        The constant that is summed after the log(n^2) is in reference to the assignment operations that occur before the loops and take a constant time 'c'.
+
+    Fragment D: O(c)
+        the assignment in the beginning assigns t to a value of n + 5. The while loop then checks if t is LESS than n which it will never be since it was
+        originally assigned a value of 5 GREATER than n. Therefore the upperbound of the runtime will always take a constant time 'c' for the assignment of
+        t in the beginning and for the single logical operation of the while loop that returned false.
+
+    Fragment E: O(n^(1/2) + c)
+        the while loop will continually increment a counter and add that counter each time to a total accumulating variable until that accumulating variable 
+        is greater than n. If the loop was only incrementing the accumulating variable by the same value each time then the upper bound would be O(n)
+        or a linear asymptotic relationship. However, what is happening must be quicker than that relationship because the the accumulating variable is
+        getting bigger each time by the amount of which pass the loop is on (the counter). This causes the accumulator to reach a value greater than n at 
+        a faster rate than if it were being incremented by the same value each time. 
+        
+        Furthermore, I noticed that the sum (accumulating variable) was was increasing at a quadratic rate. I knew it couldn't be an exponetial rate 
+        because it was too slow for that. Also, the rate at which the sum increases and how quickly sum reaches n are directly correlated. So if the sum
+        increases at a quadratic rate, that doesnt mean that the runtime does as well with respect to n. Actually it means the opposite. That the upper bound
+        of the runtime must be equal to the inverse of rate of increase of the sum. Therefore, if the inverse of n^2 is n^(1/2) or the sqrt of n, the 
+        upper bound with respect to n must be O(n^(1/2) + c) where the constant 'c' is the constant time of assignment of i and sum in the beginnning.
+
+Question 3:
+
+    Assuming that n0 > 1 then,
+    f(n) = (n+1)^5
+    g(n) = n^5
+
+    f(n)/g(n) = (n+1)^5 / n^5 < (n+n)^5 / n^5 = 32n^5/n^5 = 32
+
+    if C = 32; see that n + 1 < n + n and (n+n)^5 = (2n)^5 = 32n^5. Therefore, (n+1)^5 is O(n^5) because (n+1)^5 <= 32n^5 when n0 > 1

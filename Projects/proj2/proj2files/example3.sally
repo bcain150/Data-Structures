@@ -1,0 +1,17 @@
+// File: example3.sally
+//
+// CMSC 341 Fall 2018 Project 2
+//
+// Sally FORTH source code
+//
+// Stack manipulation test
+//
+
+15 DUP . SP . CR          // Prints 15 15 
+
+17 14 DROP . CR           // Prints 17
+
+20 30 SWAP . SP  . CR     // Prints 20 30
+
+1 3 2 ROT . SP . SP . CR  // Prints 1 2 3
+

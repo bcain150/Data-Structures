@@ -1,0 +1,94 @@
+Grading Test Log for bcain1:
+
+
+===============================================================================
+>>> Category 0: Misc.
+===============================================================================
+===============================================================================
+| [M.1] [M.2] [M.3] Symbolic link test
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 0 pts: [M.1] proj0.cpp was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.2] typescript was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.3] answer.txt was not a symbolic link (-5 penalty)
+
+
+===============================================================================
+>>> Category 1: Submission, Compilation, Debugging
+===============================================================================
+===============================================================================
+| [1.1] shared dir set up to submit
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 25 pts: [1.1] shared directory set up sufficiently to submit fi
+===============================================================================
+| [2.1] proj0.cpp submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 10 pts: [2.1] proj0.cpp submitted
+===============================================================================
+| [2.2] proj0.cpp compiles
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 10 pts: [2.2] proj0.cpp compiles
+===============================================================================
+| [3.1] typescript submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 10 pts: [3.1] typescript submitted
+>>>> FOR ITEMS IN 3.2-6, if ?@@@, EXAMINE typescript FILE<<<
+===============================================================================
+| [3.2] recorded g++ compilation
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 6 pts: [3.2] recorded g++ compilation
+===============================================================================
+| [3.3] used "where" command in gdb
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 6 pts: [3.3] used "where" command in gdb
+===============================================================================
+| [3.4] set one or more breakpoints in gdb
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 6 pts: [3.4] set one or more breakpoints in gdb
+===============================================================================
+| [3.5] used "display" command in gdb
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 6 pts: [3.5] used "display" command in gdb
+===============================================================================
+| [3.6] used "continue" command in gdb
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 6 pts: [3.6] used "continue" command in gdb
+===============================================================================
+| [4.1] answer.txt submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 10 pts: [4.1] answer.txt submitted
+===============================================================================
+| [4.2] answer.txt contains 28
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 5 pts: [4.2] answer.txt contains the single number "28"--PASSED
+
+
+
+===============================================================================
+>>> ADDITIONAL GRADER COMMENTS
+===============================================================================
+

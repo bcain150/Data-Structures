@@ -1,0 +1,85 @@
+
+-------------------
+Add 50 items
+Total size = 50
+m_buffers[0]->size() = 10
+m_buffers[1]->size() = 20
+m_buffers[2]->size() = 20
+
+-------------------
+Remove 15 items
+Total size = 35
+m_buffers[1]->size() = 15
+m_buffers[2]->size() = 20
+
+-------------------
+Add 1000 items
+Total size = 1035
+m_buffers[1]->size() = 15
+m_buffers[2]->size() = 40
+m_buffers[3]->size() = 80
+m_buffers[4]->size() = 160
+m_buffers[5]->size() = 320
+m_buffers[6]->size() = 420
+
+-------------------
+Remove 200 items
+Total size = 835
+m_buffers[4]->size() = 95
+m_buffers[5]->size() = 320
+m_buffers[6]->size() = 420
+
+-------------------
+Add 5000 items
+Total size = 5835
+m_buffers[4]->size() = 95
+m_buffers[5]->size() = 320
+m_buffers[6]->size() = 640
+m_buffers[0]->size() = 1280
+m_buffers[1]->size() = 2560
+m_buffers[2]->size() = 940
+
+-------------------
+Remove 2000 items
+Total size = 3835
+m_buffers[0]->size() = 335
+m_buffers[1]->size() = 2560
+m_buffers[2]->size() = 940
+
+-------------------
+Add 100000 items
+Total size = 103835
+m_buffers[0]->size() = 335
+m_buffers[1]->size() = 2560
+m_buffers[2]->size() = 5120
+m_buffers[3]->size() = 10240
+m_buffers[4]->size() = 20480
+m_buffers[5]->size() = 40960
+m_buffers[6]->size() = 24140
+
+-------------------
+Remove 50000 items
+Total size = 53835
+m_buffers[5]->size() = 29695
+m_buffers[6]->size() = 24140
+
+-------------------
+Add 70000 items
+Total size = 123835
+m_buffers[5]->size() = 29695
+m_buffers[6]->size() = 81920
+m_buffers[0]->size() = 12220
+
+-------------------
+Remove 123827 items
+Total size = 8
+m_buffers[0]->size() = 8
+
+
+-----------------------------------------
+Final dump:
+-----------------------------------------
+Outer Circular buffer dump(), m_obSize = 1:
+[0] InnerCB dump(): m_size = 8
+[12212] 176043, [12213] 176044, [12214] 176045, [12215] 176046, [12216] 176047, [12217] 176048, [12218] 176049, [12219] 176050, 
+-----------------------------------------

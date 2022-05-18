@@ -1,0 +1,19 @@
+// File: example4.sally
+//
+// CMSC 341 Fall 2018 Project 2
+//
+// Sally FORTH source code
+//
+// Testing variables
+//
+
+
+1 x SET             // x = 1
+x @ . CR            // printf("%d\n", x) ;
+
+x @ 1 + x !         // x = x + 1
+x @ . CR            // printf("%d\n", x) ;
+
+0 y SET             // y = 0
+x @ 2 + y !         // y = x + 2 
+y @ . CR            // printf("%d\n", y) ;

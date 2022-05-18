@@ -1,0 +1,48 @@
+CMSC341 Homework 2 Gradesheet
+---------------------------------------------------------------------------
+Student ID: bcain1
+
+Category 0: Misc:
+      Symbolic links (not allowed)
+	 0 pts: [M.1] q1.cpp was not a symbolic link (-5 penalty)
+	 0 pts: [M.2] q2.cpp was not a symbolic link (-5 penalty)
+	 0 pts: [M.3] q3.cpp was not a symbolic link (-5 penalty)
+
+Category 1: Submission, Compilation:
+      q1.cpp:
+	 1 pts: [1.1] q1.cpp submitted
+	 2 pts: [1.2] q1.cpp compiles
+	 2 pts: [1.3] allocate space for each Two object
+	 1 pts: [1.4] each Two object allocated w/separate "new"
+	 2 pts: [1.5] initialize part1 and part2
+
+      q2.cpp:
+	 1 pts: [2.1] q2.cpp submitted
+	 2 pts: [2.2] q2.cpp compiles
+	 2 pts: [2.3] initialize() passes ptr by reference
+	 2 pts: [2.4] allocates memory for array
+	 1 pts: [2.5] initializes array
+	 1 pts: [2.6] executes correctly
+
+      q3.cpp:
+	 1 pts: [3.1] q3.cpp submitted
+	 2 pts: [3.2] q3.cpp compiles
+	 2 pts: [3.3] main3a.cpp prints out 1 thru 10 once each
+	 2 pts: [3.4] main3b.cpp prints out 1 thru 7 once each
+	 2 pts: [3.5] main3c.cpp prints out -3 thru 3 once each
+	 1 pts: [3.6] uses rand() function
+
+      typescript:
+	 1 pts: [4.1] typescript submitted
+	 1 pts: [4.2] typescript shows use of valgrind for q2
+	 1 pts: [4.3] typescript shows use of valgrind for q3
+
+Deductions: 
+
+Max grade: 30 
+Total grade: 30
+
+General Comments:
+=================
+<Automatic grading results--may be adjusted>
+----

@@ -1,0 +1,17 @@
+Truth table for AND
+0
+0
+0
+1
+
+Truth table for OR
+0
+1
+1
+1
+
+Truth table for NOT
+1
+0
+End of Program
+Parameter stack empty.

@@ -1,0 +1,30 @@
+// File: example9.sally
+//
+// CMSC341 Fall 2018 Project 2
+//
+// Sally Forth source code
+
+// Testing nested DO UNTIL loops
+// EXTRA CREDIT ONLY
+// 
+// This version is more idiomatic for FORTH.
+// It stores the loop indices on the stack instead
+// of using index variables.
+//
+
+1 DO
+
+   // inner loop
+   1 DO
+     SWAP DUP . SWAP  // print outer loop index
+     SP
+     DUP . CR         // print inner loop index
+     1 + DUP          // increment inner loop index
+   5 > UNTIL
+   DROP               // ditch inner loop index 
+
+   CR
+   1 + DUP            // increment outer loop index
+
+5 > UNTIL             
+DROP                  // ditch outer loop index

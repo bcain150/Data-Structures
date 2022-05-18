@@ -1,0 +1,19 @@
+// File: example8.sally
+//
+// CMSC341 Fall 2018 Project 2
+//
+// Sally FORTH source code
+//
+// Testing DO UNTIL loop
+// prints 1 through 10 inclusive
+// 
+
+
+0 j SET
+
+DO
+
+  j @ 1 + j !    // j++
+  j @ . CR       // print j
+
+j @ 10 >= UNTIL  // until j >= 10

@@ -1,0 +1,203 @@
+Grading Test Log for bcain1:
+
+
+===============================================================================
+>>> Category 0: Misc.
+===============================================================================
+===============================================================================
+| [M.1] [M.2] [M.3] [M.4] Symbolic link test
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+=@@@ GRADE_ENTRY 0 pts: [M.1] test.sally was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.2] Driver.cpp was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.3] Sally.h was not a symbolic link (-5 penalty)
+
+=@@@ GRADE_ENTRY 0 pts: [M.4] Sally.cpp was not a symbolic link (-5 penalty)
+
+
+===============================================================================
+>>> Category 1: Submission, Compilation
+===============================================================================
+===============================================================================
+| [1.1] test.sally submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+0@@@ GRADE_ENTRY 5 pts: [1.1] test.sally submitted--FAILED
+
+Preparatory "make" results:
+g++ grdriver.cpp Sally.cpp -o grdriver.out
+g++ [dD]river.cpp Sally.cpp -o Driver.out
+g++: error: [dD]river.cpp: No such file or directory
+make: *** [../../../p2scripts/Makefile.grading:4: Driver.out] Error 1
+make: Target 'all' not remade because of errors.
+===============================================================================
+| [2.1] Driver.cpp submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+0@@@ GRADE_ENTRY 1 pts: [2.1] Driver.cpp submitted--FAILED
+
+===============================================================================
+| [2.2] Driver.cpp compiles
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+0@@@ GRADE_ENTRY 2 pts: [2.2] Driver.cpp compiles--FAILED
+
+===============================================================================
+| [3.1] Sally.h submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 1 pts: [3.1] Sally.h submitted--PASSED
+
+===============================================================================
+| [3.2] Sally.cpp submitted
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 2 pts: [3.2] Sally.cpp submitted--PASSED
+
+===============================================================================
+| [3.3] Sally.cpp compiles and links
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+=@@@ GRADE_ENTRY 4 pts: [3.3] Sally.cpp compiles and links--PASSED
+
+
+
+===============================================================================
+>>> Category 2: Test Program Execution
+===============================================================================
+===============================================================================
+| [4.1] p2grtest1.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+>>> Results for test 1 were correct.
+
+=@@@ GRADE_ENTRY 5 pts: [4.1] Test 1: Maintained basic Sally operations
+===============================================================================
+| [4.2] p2grtest2.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+>>> Results for test 2 were correct.
+
+=@@@ GRADE_ENTRY 5 pts: [4.2] Test 2: Maintained Sally arithmetic operators
+===============================================================================
+| [4.3] p2grtest3.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+>>> Results for test 3 were correct.
+
+=@@@ GRADE_ENTRY 5 pts: [4.3] Test 3: Implemented stack operators
+===============================================================================
+| [4.4] p2grtest4.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+>>> Results for test 4 were correct.
+
+=@@@ GRADE_ENTRY 7 pts: [4.4] Test 4: Implemented variable operators
+===============================================================================
+| [4.5] p2grtest5.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+>>> Results for test 5 were correct.
+
+=@@@ GRADE_ENTRY 5 pts: [4.5] Test 5: Implemented comparison operators
+===============================================================================
+| [4.6] p2grtest6.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+>>> Results for test 6 were correct.
+
+=@@@ GRADE_ENTRY 5 pts: [4.6] Test 6: Implemented logical operators
+===============================================================================
+| [4.7] p2grtest7.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+>>> Results for test 7 were correct.
+
+=@@@ GRADE_ENTRY 8 pts: [4.7] Test 7: Implemented IFTHEN/ELSE/ENDIF
+===============================================================================
+| [4.8] p2grtest8.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+2,10c2
+< 2
+< 3
+< 4
+< 5
+< 6
+< 7
+< 8
+< 9
+< 10
+---
+> END THIS
+>>> Results for test 8 had errors.
+
+0@@@ GRADE_ENTRY 10 pts: [4.8] Test 8: Implemented DO/UNTIL
+
+
+===============================================================================
+>>> Category 3: Extra Credit
+===============================================================================
+===============================================================================
+| [E.1] p2grtest9.sally runs correctly
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+2,29c2
+< 1 2
+< 1 3
+< 1 4
+< 1 5
+< 
+< 2 1
+< 2 2
+< 2 3
+< 2 4
+< 2 5
+< 
+< 3 1
+< 3 2
+< 3 3
+< 3 4
+< 3 5
+< 
+< 4 1
+< 4 2
+< 4 3
+< 4 4
+< 4 5
+< 
+< 5 1
+< 5 2
+< 5 3
+< 5 4
+< 5 5
+---
+> END THIS
+30a4
+> END THIS
+>>> Results for test 9 had errors.
+
+0@@@ GRADE_ENTRY 8 pts: [E.1] Test 9: Extra credit: Implemented nested DO/UNTIL
+
+
+===============================================================================
+>>> Category 4: Design
+===============================================================================
+
+@@@@ GRADE_ENTRY 30 pts: [D.1] Sound overall design
+
+
+===============================================================================
+>>> Category 5: Coding Standards
+===============================================================================
+
+@@@@ GRADE_ENTRY 5 pts: [S.1] No substantial violations of class coding stds.
+
+
+===============================================================================
+>>> ADDITIONAL GRADER COMMENTS
+===============================================================================
+<Automatic grading results--may be adjusted>

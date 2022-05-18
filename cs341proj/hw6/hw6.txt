@@ -1,0 +1,162 @@
+Name: Brendan Cain
+Userid: NF67373 (bcain1)
+
+CMSC 341 Fall 2018 Homework 6
+
+
+-------------------------------------------------------------------
+Question A (15 points) 
+-------------------------------------------------------------------
+
+[Adapted from problem R-9.8 in textbook]
+
+Hash the values 94, 11, 39, 20, 16, 5, 12, 44, 13, 88 and 23 into
+a hash table with 11 slots. Handle collisions by linear probing.
+Use the hash function: h(i) = (3 * i + 5) % 11
+
+Type in each key on the same line as the index of the slot 
+where it is eventually inserted.
+
+YOUR ANSWER TO QUESTION A:
+   0: 5
+   1: 94
+   2: 39
+   3: 13
+   4: 23
+   5: 11
+   6: 44
+   7: 88
+   8: 12
+   9: 16
+  10: 20
+
+
+-------------------------------------------------------------------
+Question B (20 points) 
+-------------------------------------------------------------------
+
+[Adapted from problem R-9.10 in textbook]
+
+Repeat Question A using double hashing instead of linear probing.
+Use the secondary hash function h'(k) = 7 - (k % 7).
+
+YOUR ANSWER TO QUESTION B:
+   0: 44
+   1: 94
+   2: 23
+   3: 12
+   4: 5
+   5: 11 
+   6: 13
+   7: 88
+   8: 39
+   9: 16
+  10: 20
+
+
+-------------------------------------------------------------------
+Question C  (35 points total)
+-------------------------------------------------------------------
+
+We want to support the operations Insert(), Find() and Max() for 
+a program that uses n Insert(), n Find() and 15 Max() operations.
+These operations can be performed in any order. The Max() operation 
+simply reports the maximum valued stored in the data structure
+at the time of the call.
+
+1. (5 points) Suppose that we use a red-black tree to support this
+program. What is the asymptotic worst case running time for 
+n Insert(), n Find() and 15 Max() operations?
+
+   (a) O(n) 
+   (b) O(n log n)
+   (c) O(n^2)
+   (d) O(n^2 log n) 
+   (e) O(n^3)
+
+Answer:  B
+
+
+2. (5 points) BRIEFLY explain your choice above.
+
+For a red-black tree: insert, find, and max all have a worst case asymptotic
+runtime of O(log(i)) where i is the amount of elements in the tree. We know this
+because in the worst case insert, find, and max will have to traverse the entire height
+of the tree which for any red-black tree is log(i). Since we can have nInsert() fuctions
+the size i of the tree is growing with each insert n. However this does not change the amount
+of time (in the worse case) that it would take to preform a Find() or a Max(). Therefore, the
+asymptotic worse case for performing n operations that take O(log(i)) must be equivalent to
+O(log(i)) * the value of n or nlog(n). So the sum of performing nInserts, nFinds, and 15Maxes
+would be the sum of their individual total worst case runtimes. = nlog(n) + nlog(n) + 15log(n).
+This simplifies to O(nlog(n)).
+
+3. (5 points) Suppose that we use a binary max heap to support this
+program. What is the asymptotic worst case running time for   
+n Insert(), n Find() and 15 Max() operations?
+
+   (a) O(n)     
+   (b) O(n log n)
+   (c) O(n^2)
+   (d) O(n^2 log n) 
+   (e) O(n^3)
+
+Answer: C
+
+
+
+4. (5 points) BRIEFLY explain your choice above.
+
+Following the same logic as before the total asymptotic runtime for
+all three functions would be the sum of each individual total runtime.
+The individual total runtime is x * the runtime for one operation. In the
+case of nInserts the total worst case runtime would be n*log(n) because each
+individual insert takes O(log(n)) time. The total worst case runtime for
+nFinds would be n * O(n) = O(n^2) where O(n) is the individual worst case runtime.
+since Max() is constant time for a binary max heap, 15 Max() operations is still
+constant time. So, O(nlogn) + O(n^2) + O(15). Since the total runtime is dependant on
+O(n^2) the total worst case asymptotic runtime for all of these operations would be
+O(n^2).
+
+
+
+
+5. (5 points) Suppose that we use a hash table with a "good"
+hash function to support this program. What is the asymptotic 
+"average" running time for n Insert(), n Find() and 15 Max() 
+operations?
+
+   (a) O(n)     
+   (b) O(n log n)
+   (c) O(n^2)
+   (d) O(n^2 log n) 
+   (e) O(n^3)
+
+Answer:  A
+
+
+
+6. (5 points) BRIEFLY explain your choice above.
+
+The AVERAGE runtime of Insert and Find for a hash table with a good hash function
+is constant time -> O(1). So for n operations of this type we should expect the runtime
+to be directly correlated to the amount of operations which would give O(n) for a total of
+n Inserts or n Find() operations. That being said, applying the same logic as before would mean
+that doing n Inserts and n Finds would give us a O(2n) which would simplify to O(n).
+Now the Max() operation is the most expensive out of the 3 operations because hash tables
+don't have any obvious order, so the only way to find the max value in the table is to
+look at every inserted element. Therefore the worst case runtime for finding Max() is 
+O(n) where n is the number of elements in the table. That would make the average O(n/2),
+which when summed with the average runtime of the other operations would also simplify to 
+O(n).
+
+
+7. (5 points) Which of these three data structures would you
+pick to support n Insert(), n Find() and 15 Max() operations?
+Briefly justify your answer.
+
+It would definitely depend on the applications but, in general I would probably 
+pick the Hash Table as described in the previous Question because it supports 
+an average runtime of constant insertion and finding operations as long
+as the size of the table is big enough to have the least amount of collisions.
+Also the worst case for the 15 Max() operations is O(n) is still better than the
+next best TOTAL worst runtime for any other data structure in this hw.

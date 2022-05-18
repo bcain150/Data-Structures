@@ -1,0 +1,40 @@
+CMSC341 Project 0 Gradesheet
+---------------------------------------------------------------------------
+Student ID: bcain1
+
+Category 0: Misc:
+      Symbolic links (not allowed)
+	 0 pts: [M.1] proj0.cpp was not a symbolic link (-5 penalty)
+	 0 pts: [M.2] typescript was not a symbolic link (-5 penalty)
+	 0 pts: [M.3] answer.txt was not a symbolic link (-5 penalty)
+
+Category 1: Submission, Compilation, Debugging:
+      baseline:
+	25 pts: [1.1] shared directory set up sufficiently to submit files
+
+      proj0.cpp:
+	10 pts: [2.1] proj0.cpp submitted
+	10 pts: [2.2] proj0.cpp compiles
+
+      typescript:
+	10 pts: [3.1] typescript submitted
+	 6 pts: [3.2] recorded g++ compilation
+	 6 pts: [3.3] used "where" command in gdb
+	 6 pts: [3.4] set one or more breakpoints in gdb
+	 6 pts: [3.5] used "display" command in gdb
+	 6 pts: [3.6] used "continue" command in gdb
+
+      answer.txt:
+	10 pts: [4.1] answer.txt submitted
+	 5 pts: [4.2] answer.txt contains the single number "3"
+
+
+Deductions: 
+
+Max grade: 100
+Total grade: 100
+
+General Comments:
+=================
+<Automatic grading results--may be adjusted>
+----

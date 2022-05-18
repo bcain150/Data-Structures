@@ -1,0 +1,4 @@
+In FORTH, speak like Yoda we do
+Three plus five, what is? 8
+End of Program
+Parameter stack empty.

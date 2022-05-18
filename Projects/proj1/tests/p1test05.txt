@@ -1,0 +1,4 @@
+Passed equality test 1
+Passed equality test 2
+Passed equality test 3
+Passed equality test 4

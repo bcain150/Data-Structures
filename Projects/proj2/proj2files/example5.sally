@@ -1,0 +1,28 @@
+// File: example5.sally
+//
+// CMSC 341 Fall 2018 Project 2
+//
+// Sally FORTH source code
+//
+// Testing comparison operatons
+//
+// Prints False, True, False, True...
+
+
+17 13 <  . CR
+17 23 <  . CR
+
+35 31 <= . CR
+31 31 <= . CR
+
+91 19 == . CR
+19 19 == . CR
+
+19 19 != . CR
+91 19 != . CR
+
+37 43 >= . CR
+43 43 >= . CR
+
+61 75 >  . CR
+95 75 >  . CR

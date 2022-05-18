@@ -1,0 +1,56 @@
+CMSC341 Project 2 Gradesheet
+---------------------------------------------------------------------------
+Student ID: bcain1
+
+Category 0: Misc:
+      Symbolic links (not allowed)
+	 0 pts: [M.1] test.sally was not a symbolic link (-5 penalty)
+	 0 pts: [M.2] Driver.cpp was not a symbolic link (-5 penalty)
+	 0 pts: [M.3] Sally.h was not a symbolic link (-5 penalty)
+	 0 pts: [M.4] Sally.cpp was not a symbolic link (-5 penalty)
+
+Category 1: Submission, Compilation: (15 pts)
+      Sample test file:
+-5	 5 pts: [1.1] test.sally submitted
+
+      Driver program:
+-1	 1 pts: [2.1] Driver.cpp submitted
+-2	 2 pts: [2.2] Driver.cpp compiles
+
+      Sally:
+	 1 pts: [3.1] Sally.h submitted
+	 2 pts: [3.2] Sally.cpp submitted
+	 4 pts: [3.3] Sally.cpp compiles and links
+
+Category 2: Test Program Execution (50 pts)
+	 5 pts: [4.1] Test 1: Maintained basic Sally operations
+	 5 pts: [4.2] Test 2: Maintained Sally arithmetic operators
+	 5 pts: [4.3] Test 3: Implemented stack operators
+	 7 pts: [4.4] Test 4: Implemented variable operators
+	 5 pts: [4.5] Test 5: Implemented comparison operators
+	 5 pts: [4.6] Test 6: Implemented logical operators
+	 8 pts: [4.7] Test 7: Implemented IFTHEN/ELSE/ENDIF
+-10	10 pts: [4.8] Test 8: Implemented DO/UNTIL
+
+Category 3: Extra Credit (10 pts)
+	 8 pts: [E.1] Test 9: Extra credit: Implemented nested DO/UNTIL loops
+
+Category 4: Design (30 pts)
+	30 pts: [D.1] Sound overall design
+
+Category 5: Coding Standards (5 pts)
+	 5 pts: [S.1] No substantial violations of class coding stds.
+
+
+Deductions: -8 -10   
+
+Max grade: 100
+Raw grade: 82
+Late penalty: 0
+Misc penalty:
+Total grade: 82
+
+General Comments:
+=================
+<Automatic grading results--may be adjusted>
+----

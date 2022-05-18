@@ -1,0 +1,22 @@
+// File: example1.sally
+//
+// CMSC 341 Fall 2018 Project 2
+//
+// Sally FORTH source code
+//
+// Basic test
+//
+
+CR
+
+."DO UNTIL TEST" . CR
+0 X SET
+DO
+    X @
+    1 + 
+    DUMP CR
+    X !
+X @ 10 < UNTIL
+DUMP
+
+
